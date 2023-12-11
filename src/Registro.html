@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 
-<div class="font-[Poppins]  bg-gradient-to-t from-black h-screen to-blue-950">
-    <header class="bg-black">
+<body class="font-[Poppins]  bg-gradient-to-t from-black to-blue-950">
+    <header class=" bg-black">
         <nav class="flex justify-between items-center w-[92%] font-sans mx-auto">
             <div>
                 <img class="w-36" src="/images/logo.png" alt="...">
@@ -37,66 +37,100 @@
             <div>
 
                 <a href="login.html"><button
-                        class="bg-red-600 py-2 text-white px-5 py-2 rounded-md hover:bg-red-600 ">Iniciar
+                        class="bg-[#fc0000] py-2 text-white px-5 py-2 rounded-md ">Iniciar
                         Secion</button></a>
                 <a href="Registro.html"><button
-                        class="bg-red-600 py-2 text-white px-5 py-2 rounded-md hover:bg-red-600">Registrarse</button></a>
+                        class="bg-[#fc0000] py-2 text-white px-5 py-2 rounded-md ">Registrarse</button></a>
             </div>
         </nav>
     </header>
 
-    <div class=" bg-gradient-to-t via-blue-950 from-black h-screen to-black
-              grid place-content-center">
-
-
+    <div class="grid place-content-center">
         <form class="text-center ">
             <h1 class="text-white text-4xl font-sans">Datos Personales</h1>
-            <table class="">
-                <tr>
-                    <td> <input class="bg-gray-800 text-white rounded-full text-xl w-96 " type="password" name="" id=""
-                            placeholder="Escriba su contraseña" aria-live="password"></td>
-                </tr>
-                <tr>
-                    <td> <input class="bg-gray-800 text-white rounded-full text-xl w-96 " type="password" name="" id=""
-                            placeholder="Escriba su contraseña" aria-live="password"></td>
-                </tr>
-                
-                <tr>
-                    <td>
-                        <a href="login.html"><button class="bg-[#fc0000] py-2 w-96 text-white px-5 rounded-md">Iniciar
-                                Secion</button></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="Registro.html"><button
-                                class="bg-[#fc0000] py-2 w-96 text-white px-5 rounded-md">Registrarse</button></a>
 
+            <table>
+                <tr>
+                    <td class="h-16">
+                        <input class="bg-gray-800 text-white rounded-full text-xl w-96 " type="text" name="" id=""
+                            placeholder="Nombre" aria-live="nombre">
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <a class="text-white" href="recuperar.html">olvidaste tu contraseña</a>
-                    </td>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div>
-                            <img class="w-96" src="/images/logo.png" alt="...">
-                        </div>
+                    <td class="h-16"> <input class="bg-gray-800 text-white rounded-full text-xl w-72 " type="text"
+                            name="" id="" placeholder="Apellido Paterno" aria-live="APaterno">
+                        <input class="bg-gray-800 text-white rounded-full text-xl w-72 " type="text" name="" id=""
+                            placeholder="Apellido Materno" aria-live="AMaterno">
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <a href="index.html"><button class="bg-[#fc0000] py-2 w-96 text-white px-5 rounded-md ">Seguir
-                                sin registro</button></a>
+                    <td class="h-16"> <select class="bg-gray-800 text-white rounded-full text-xl w-72"
+                            name="Tipo de Doucmento" id="Tipo de Documento">
+                            <option value="null"> Tipo de documento</option>
+                            <option value="Otro"> Otro</option>
+                            <option value="NIT"> NIT</option>
+                            <option value="CI">CI</option>
+                        </select>
+                        <input class="bg-gray-800 text-white rounded-full text-xl w-72 " type="tel" name="" id=""
+                            placeholder="Numero de documento" aria-live="Ndocumento">
                     </td>
                 </tr>
+                <td class="h-16"> <select class="bg-gray-800 text-white rounded-full text-xl w-96" name="Sexo"
+                        id="Tipo de Documento">
+                        <option value="null"> Genero</option>
+                        <option value="Masculino"> Masculino</option>
+                        <option value="Femenino"> Femenino</option>
+                    </select>
+                </td>
+                <tr>
+                    <td class="h-16">
+                        <input class="bg-gray-800 text-white rounded-full text-xl w-96 " type="text" name="" id=""
+                            placeholder="Dirrecion" aria-live="direccion">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="h-16">
+                        <input class="bg-gray-800 text-white rounded-full text-xl w-96 " type="tel" name="" id=""
+                            placeholder="Telefono" aria-live="telefono">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="h-16">
+                        <input class="bg-gray-800 text-white rounded-full text-xl w-96 " type="date" name="fecha"
+                            id="fecha">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="h-16">
+                        <input class="bg-gray-800 text-white rounded-full text-xl w-96 " type="email" name="" id=""
+                            placeholder="Correo" aria-live="correo">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="h-16">
+                        <input class="bg-gray-800 text-white rounded-full text-xl w-96 " type="password" name="" id=""
+                            placeholder="Contraseña" aria-live="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="h-16">
+                        <input class="bg-gray-800 text-white rounded-full text-xl w-96 " type="password" name="" id=""
+                            placeholder="Confirmar contraseña" aria-live="Cpassword">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="h-16">
+                        <a href="login.html"><button
+                                class="bg-[#fc0000] py-2 w-96 text-white px-5 rounded-md">Guardar</button></a>
+                    </td>
+                </tr>
+
             </table>
         </form>
-
-</div>
+        <div class="">
+            <img class="w-36" src="/images/logo.png" alt="">
+        </div>
+    </div>
 </body>
 
 </html>
